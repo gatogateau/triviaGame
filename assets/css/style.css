@@ -1,0 +1,47 @@
+*{
+    background: lightgray;
+    /* background-image:url("../images/jeopardy.jpg"); */
+    /* background-repeat:no-repeat; */
+
+}
+
+button {
+    background: lightblue;
+    font-size:36px;
+    height:80px;
+    width: 300px;
+    border-radius: 8px;
+    border: solid 2pt blue;
+    transition-duration: .4s;
+    color: Blue;
+    
+}
+
+button:hover {
+    background-color: white;;
+    color: darkgray;
+    
+}
+
+.container {
+    border: solid 2pt black;
+    padding: 7pt;
+    margin: 7pt;
+}
+
+.header {
+    border: solid 2pt black;
+    padding: 7pt;
+    margin: 7pt;
+    text-align:center;
+    font-weight:bold;
+}
+
+.scoreCard {
+    border: solid 2pt black;
+    padding-left:7pt;
+    padding-top: 1pt;
+    margin: 7pt;
+    font-size: 12pt;
+
+}

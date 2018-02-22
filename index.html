@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<!-- Trivia Game -->
+<html>
+<head>
+    <title>Trivia Game</title>
+    <link rel="stylesheet" type="text/css" media="screen" href="assets/css/style.css" />
+    <script src="assets/javascript/app.js"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+</head>
+<body>
+    <div class="header">
+        <div>
+            <h1>Let's Play some Rocky Trivia</h1>   
+        
+        </div>
+    </div>
+    <div class="container">
+        <div class="timer">
+        <!-- timer -->
+
+        </div>
+
+        <div class="timerButton">
+        <!-- start timer button and counter -->
+            <button onclick="startTheGame()" class="start">Let's Begin</button>
+            <!-- <button onclick="clearTimeout (myVar);">Stop the timer</button> -->
+                <span class="countDown"></Span>
+                <p id="time"></p>
+        </div>
+        <br>
+        <!-- <br> -->
+        <!-- add some questions.  base this on Rocky trivia, with button selector -->
+        <span id="gameStart">
+
+        </span>    
+        <div>
+            <p>Which Rocky film does The Italian Stallion step into the ring with the Russian?
+                <br>
+
+                <input id="russian1" type="radio" name="rocky1" value="rocky1"/> Rocky I
+                <input id="russian2" type="radio" name="rocky1" value="rocky1"/> Rocky II
+                <input id="russian3" type="radio" name="rocky1" value="rocky1"/> Rocky III
+                <input id="russian4" type="radio" name="rocky1" value="rocky1"/> Rocky IV
+                <input id="russian5" type="radio" name="rocky1" value="rocky1"/> Rocky V
+
+            </p>
+        </div>
+        <br>
+        <!-- <br> -->
+        <div>
+             <p>What is Rocky's dog's name?
+                <br>
+        
+                <input id="dog1" class="dog" type="radio" name="rocky2" value="rocky2"/> Cruiser
+                <input id="dog2" class="dog" type="radio" name="rocky2" value="rocky2"/> Buttkiss
+                <input id="dog3" class="dog" type="radio" name="rocky2" value="rocky2"/> Lefty
+                <input id="dog4" class="dog" type="radio" name="rocky2" value="rocky2"/> Hurler
+                <input id="dog5" class="dog" type="radio" name="rocky2" value="rocky2"/> Woof!
+        
+            </p>
+        </div>
+        <br>
+        <!-- <br> -->
+
+        <div>
+            <p>This film earned Sylvester Stallone an Oscar?
+                    <br>
+    
+                <input id="oscar1" class="oscar" type="radio" name="rocky3" value="rocky3"/> Rocky I
+                <input id="oscar2" class="oscar" type="radio" name="rocky3" value="rocky3"/> Rocky II
+                <input id="oscar3" class="oscar" type="radio" name="rocky3" value="rocky3"/> Rocky III
+                <input id="oscar4" class="oscar" type="radio" name="rocky3" value="rocky3"/> Rocky IV
+                <input id="oscar5" class="oscar" type="radio" name="rocky3" value="rocky3"/> Rocky V
+    
+                </p>
+        </div>
+            <br>
+            <!-- <br> -->
+        <div>
+            <p>Rocky fights in the ring for charity against which opponent?
+                        <br>
+        
+                <input id="charity1" class="charity" type="radio" name="rocky4" value="rocky4"/> Mr T
+                <input id="charity2" class="charity" type="radio" name="rocky4" value="rocky4"/> Hulk Hogan
+                <input id="charity3" class="charity" type="radio" name="rocky4" value="rocky4"/> Ivan Drago
+                <input id="charity4" class="charity" type="radio" name="rocky4" value="rocky4"/> Tommy Gunn
+                <input id="charity5" class="charity" type="radio" name="rocky4" value="rocky4"/> Pauly
+        
+            </p>
+        </div> 
+               <!-- <br> -->
+               <br>
+
+        <div>
+            <p>Sylvester Stallone Trains a new Boxer, but is betrayed by the Student, where does it take place?
+                <br>
+        
+                <input id="student1" class="student" type="radio" name="rocky5" value="rocky5"/> Chicago
+                <input id="student2" class="student" type="radio" name="rocky5" value="rocky5"/> Philadelphia
+                <input id="student3" class="student"type="radio" name="rocky5" value="rocky5"/> Moab
+                <input id="student4" class="student"type="radio" name="rocky5" value="rocky5"/> Brooklyn
+                <input id="student5" class="student"type="radio" name="rocky5" value="rocky5"/> Mickey's Gym
+        
+            </p>
+            <button onclick="answer()" class="end">submit</button>
+        </div> 
+    </div>
+
+    <div class="scoreCard">
+        <p class="wins"> correct answers: <span id="win"></span></p>
+        <p class="loss"> incorrect answers: <span id="loss"></span></p>
+        <p class="score"> Score: <span id="score"></span></p>
+
+    </div>
+
+
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+</body>
+</html>
